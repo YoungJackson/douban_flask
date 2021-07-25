@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>豆瓣Top250数据可视化</title>
+<!-- Favicon -->
+<link rel="stylesheet" href="static/assets/css/vendor/icofont.min.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/animate.min.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/swiper-bundle.min.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/aos.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/selectric.css" />
+<link rel="stylesheet" href="static/assets/css/style.css" />
+    <!-- Use the minified version files listed below for better performance and remove the files listed above --><!-- Minified css --><!-- # vendor min css,plugins min css,style min css --><!-- <link rel="stylesheet" href="static/assets/css/vendor/vendor.min.css" /><link rel="stylesheet" href="static/assets/css/plugins/plugins.min.css" /><link rel="stylesheet" href="static/assets/css/plugins/aos.css" /><link rel="stylesheet" href="static/assets/css/plugins/selectric.css" /><link rel="stylesheet" href="static/assets/css/style.min.css" />-->
+</head>
+
+<body>
+
+
+
+
+<!-- Modal -->
+  <div id="active-sticky" class="header-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+          <button type="button" class="btn btn-warning offcanvas-toggler" data-bs-toggle="modal" data-bs-target="#offcanvas-modal"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+          <nav class="d-none d-lg-block">
+            <ul class="main-menu text-end">
+              <li class="main-menu-item"><a class="main-menu-link" href="/index">首页</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/movie">电影</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/score">评分</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/word">词云</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/team">团队</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </div>
+
+
+<!-- team section start -->
+<section class="team-section position-relative"> <img class="pattern" src="static/assets/images/team/pattern.png" alt="images-not_found" />
+  <div class="container">
+    <div class="row">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title process text-center pb-90">
+          <div class="icon"> <img src="static/assets/images/icon/team.png" alt="Icon_not_found" /> </div>
+          <h3 class="title">Amazing Team Members</h3>
+          <span class="hr-secodary"></span> </div>
+      </div>
+    </div>
+    <div class="row mb-n7">
+      <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-card">
+          <div class="thumb"> <img src="static/assets/images/team/1.png" alt="images_not_found" /> <img class="social-hover" src="static/assets/images/team/team-hover.png" alt="images_not_found" />
+            <ul class="team-social">
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-facebook"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-twitter"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-skype"></i></a> </li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3 class="title">杨森</h3>
+            <p>Digital Strategist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="600">
+        <div class="team-card">
+          <div class="thumb"> <img src="static/assets/images/team/2.png" alt="images_not_found" /> <img class="social-hover" src="static/assets/images/team/team-hover.png" alt="images_not_found" />
+            <ul class="team-social">
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-facebook"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-twitter"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-skype"></i></a> </li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3 class="title">李伟</h3>
+            <p>Project Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="900">
+        <div class="team-card">
+          <div class="thumb"> <img src="static/assets/images/team/3.png" alt="images_not_found" /> <img class="social-hover" src="static/assets/images/team/team-hover.png" alt="images_not_found" />
+            <ul class="team-social">
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-facebook"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-twitter"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-skype"></i></a> </li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3 class="title">张三</h3>
+            <p>Ui/ux designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-7" data-aos="fade-up" data-aos-delay="1200">
+        <div class="team-card">
+          <div class="thumb"> <img src="static/assets/images/team/4.png" alt="images_not_found" /> <img class="social-hover" src="static/assets/images/team/team-hover.png" alt="images_not_found" />
+            <ul class="team-social">
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-facebook"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-twitter"></i></a> </li>
+              <li class="team-social-item"> <a class="team-social-link" href="#"><i class="icofont-skype"></i></a> </li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3 class="title">李四</h3>
+            <p>seo specialist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- team section end -->
+
+
+<footer>
+    <!-- coppy right satrt -->
+  <div class="copy-right-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright &copy; 2021.Company name All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coppy right end -->
+
+</footer>
+
+<!-- Scripts --><!-- Global Vendor,plugins JS --><!-- Vendor JS --><!-- <script src="static/assets/js/vendor/vendor.min.js"></script><script src="static/assets/js/plugins/plugins.min.js"></script><script src="static/assets/js/ajax-contact.js"></script><script src="static/assets/js/plugins/aos.js"></script><script src="static/assets/js/plugins/waypoints.js"></script><script src="static/assets/js/plugins/jquery.selectric.min.js"></script><script src="static/assets/js/main.js"></script>--><!-- Use the minified version files listed below for better performance and remove the files listed above --><!-- # Minified js --><!-- vendor,plugins and main js --><script src="static/assets/js/vendor/vendor.min.js"></script><script src="static/assets/js/plugins/plugins.min.js"></script><script src="static/assets/js/ajax-contact.js"></script><script src="static/assets/js/plugins/aos.js"></script><script src="static/assets/js/plugins/waypoints.js"></script><script src="static/assets/js/plugins/jquery.selectric.min.js"></script><script src="static/assets/js/main.min.js"></script>
+
+</body>
+</html>

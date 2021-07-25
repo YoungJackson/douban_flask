@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>豆瓣Top250数据可视化</title>
+<!-- Favicon -->
+<link rel="stylesheet" href="static/assets/css/vendor/icofont.min.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/animate.min.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/swiper-bundle.min.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/aos.css" />
+<link rel="stylesheet" href="static/assets/css/plugins/selectric.css" />
+<link rel="stylesheet" href="static/assets/css/style.css" />
+    <!-- Use the minified version files listed below for better performance and remove the files listed above --><!-- Minified css --><!-- # vendor min css,plugins min css,style min css --><!-- <link rel="stylesheet" href="static/assets/css/vendor/vendor.min.css" /><link rel="stylesheet" href="static/assets/css/plugins/plugins.min.css" /><link rel="stylesheet" href="static/assets/css/plugins/aos.css" /><link rel="stylesheet" href="static/assets/css/plugins/selectric.css" /><link rel="stylesheet" href="static/assets/css/style.min.css" />-->
+</head>
+
+<body>
+
+
+
+
+<!-- Modal -->
+<div class="modal offcanvas-modal fade" id="offcanvas-modal">
+  <div class="modal-dialog offcanvas-dialog">
+    <div class="modal-content">
+      <div class="modal-header offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- offcanvas-form-wrap start -->
+      <div class="offcanvas-form-wrap">
+        <form action="#" class="offcanvas-form position-relative">
+          <input class="form-control" type="text" placeholder="Enter your search key ... " />
+          <button class="btn btn-warning">search</button>
+        </form>
+      </div>
+
+      <p class="text-gradient mt-3">Let us grow your website traffic.</p>
+    </div>
+  </div>
+</div>
+  <div id="active-sticky" class="header-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+
+
+          <button type="button" class="btn btn-warning offcanvas-toggler" data-bs-toggle="modal" data-bs-target="#offcanvas-modal"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+          <nav class="d-none d-lg-block">
+            <ul class="main-menu text-end">
+              <li class="main-menu-item"><a class="main-menu-link" href="/index">首页</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/movie">电影</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/score">评分</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/word">词云</a></li>
+              <li class="main-menu-item"><a class="main-menu-link" href="/team">团队</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </div>
+
+
+<!-- service section start -->
+<section class="service-section section-pb-150">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="section-title primary text-center pb-100">
+          <div class="icon"> <img src="static/assets/images/icon/sharing.png" alt="Icon_not_found" /> </div>
+          <h3 class="title">豆瓣电影Top250</h3>
+         </div>
+      </div>
+    </div>
+    <div class="row mb-n7">
+        <table class="table table-striped">
+            <tr>
+                <td>排名</td>
+                <td>中文名称</td>
+                <td>外国名称</td>
+                <td>评分</td>
+                <td>评价人数</td>
+                <td>一句话概括</td>
+                <td>其他信息</td>
+            </tr>
+            {% for movie in movies %}
+                <tr>
+
+                 <td>{{movie[0]}}</td>
+                 <td>
+                    <a href="{{movie[1]}}" target="_blank">
+                    {{movie[3]}}
+                    </a>
+                 </td>
+                <td>{{movie[4]}}</td>
+                <td>{{movie[5]}}</td>
+                <td>{{movie[6]}}</td>
+                <td>{{movie[7]}}</td>
+                <td>{{movie[8]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+  </div>
+</section>
+<!-- service section end -->
+
+
+
+
+
+<footer>
+    <!-- coppy right satrt -->
+  <div class="copy-right-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright &copy; 2021.China All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coppy right end -->
+
+</footer>
+
+<!-- Scripts --><!-- Global Vendor,plugins JS --><!-- Vendor JS --><!-- <script src="static/assets/js/vendor/vendor.min.js"></script><script src="static/assets/js/plugins/plugins.min.js"></script><script src="static/assets/js/ajax-contact.js"></script><script src="static/assets/js/plugins/aos.js"></script><script src="static/assets/js/plugins/waypoints.js"></script><script src="static/assets/js/plugins/jquery.selectric.min.js"></script><script src="static/assets/js/main.js"></script>--><!-- Use the minified version files listed below for better performance and remove the files listed above --><!-- # Minified js --><!-- vendor,plugins and main js --><script src="static/assets/js/vendor/vendor.min.js"></script><script src="static/assets/js/plugins/plugins.min.js"></script><script src="static/assets/js/ajax-contact.js"></script><script src="static/assets/js/plugins/aos.js"></script><script src="static/assets/js/plugins/waypoints.js"></script><script src="static/assets/js/plugins/jquery.selectric.min.js"></script><script src="static/assets/js/main.min.js"></script>
+
+</body>
+</html>
